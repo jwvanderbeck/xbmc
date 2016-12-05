@@ -5290,6 +5290,7 @@ this.Kodi.module("Entities", function(Entities, App, Backbone, Marionette, $, _)
         classes: 'nav-help',
         parent: 0
       });
+      
       return this.checkVisibility(nav);
     },
     checkVisibility: function(items) {
@@ -10928,7 +10929,11 @@ this.Kodi.module("HelpApp", function(HelpApp, App, Backbone, Marionette, $, _) {
         }, {
           title: t.gettext('Translations'),
           path: 'help/lang-readme'
-        }
+        }, {
+          title: t.gettext('Kodi Log'),
+          path: 'help/kodi-log'
+        
+
       ];
     }
   };
